@@ -10,6 +10,11 @@ export default defineNuxtConfig({
   hub: {
     database: true
   },
+  nitro: {
+    experimental: {
+      tasks: true,
+    }
+  },
   // Development config
   eslint: {
     config: {
