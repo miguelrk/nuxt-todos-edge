@@ -23,7 +23,7 @@ export default defineTask({
 
       console.log({ todos1: todos1.length, todos2: todos2.length, todos3: todos3.length });
 
-       await useDB().insert(tables.todos).values(todosStaticallyAnalyzable as any).execute();
+       await useDB().insert(tables.todos).values(todos1 as any).execute();
 
       return { result: "success" };
     } catch (error: any) {
